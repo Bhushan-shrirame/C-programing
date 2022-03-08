@@ -13,4 +13,20 @@ int main() {
 }
 
 //void function  -  this function dont give any output
-// main function shoul be last 
+
+
+// OR
+
+#include <iostream>
+using namespace std;
+
+void printSomething();         // defining at the top and then writing the funtion code later
+
+int main() {
+    printSomething();
+    return 0;
+}
+
+void printSomething(){
+    cout << "printSomething function";
+}
